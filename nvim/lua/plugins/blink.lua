@@ -1,0 +1,43 @@
+return {
+  -- {
+  --   "saghen/blink.cmp",
+  --   opts = {
+  --     completion = {
+  --       accept = {
+  --         -- experimental auto-brackets support
+  --         auto_brackets = {
+  --           enabled = true,
+  --         },
+  --       },
+  --       menu = {
+  --         draw = {
+  --           treesitter = { "lsp" },
+  --         },
+  --       },
+  --       documentation = {
+  --         auto_show = true,
+  --         auto_show_delay_ms = 200,
+  --       },
+  --       ghost_text = {
+  --         enabled = vim.g.ai_cmp,
+  --       },
+  --     },
+  --
+  --     -- experimental signature help support
+  --     -- signature = { enabled = true },
+  --
+  --     sources = {
+  --       -- adding any nvim-cmp sources here will enable them
+  --       -- with blink.compat
+  --       compat = {},
+  --       default = { "lsp", "buffer" }, -- , "snippets"
+  --     },
+  --     keymap = {
+  --       preset = "super-tab",
+  --       ["<C-y>"] = { "select_and_accept" },
+  --       ["<S-Tab>"] = { "select_prev" },
+  --       ["<Tab>"] = { "select_next" },
+  --     },
+  --   },
+  -- },
+}
