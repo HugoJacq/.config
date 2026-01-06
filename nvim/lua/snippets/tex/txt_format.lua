@@ -53,4 +53,16 @@ return {
       i(1),
     })
   ),
+  -- newline
+  s({
+    trig = "nwl",
+    snippetType = "autosnippet",
+  }, { t("\\newline") }),
+  -- url
+  s(
+    { trig = "url", dscr = "url shortcut" },
+    fmta("\\url{<>}", {
+      i(1),
+    })
+  ),
 }
