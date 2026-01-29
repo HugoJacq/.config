@@ -15,7 +15,6 @@ goa-1.0
 gtk-3.0
 gtk-4.0
 htop
-hypr
 ibus
 kitty
 kitty-backup-back-up_1202_1744
@@ -72,4 +71,5 @@ Mousepad/
 OpenTabletDriver/
 kritadisplayrc
 kritarc
-
+google-chrome/
+kritashortcutsrc
