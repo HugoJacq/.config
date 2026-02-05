@@ -21,6 +21,13 @@ return {
     dscr = "2nd-level section",
     condition = line_begin,
   }, fmta([[\subsection{<>}]], { i(1) })),
+  -- s3 -> \subsubsection{}
+  s({
+    trig = "s3",
+    dscr = "3nd-level section",
+    condition = line_begin,
+  }, fmta([[\subsubsection{<>}]], { i(1) })),
+
   -- new generic env
   s(
     {
