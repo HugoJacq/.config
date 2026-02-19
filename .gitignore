@@ -16,7 +16,6 @@ gtk-3.0
 gtk-4.0
 htop
 ibus
-kitty
 kitty-backup-back-up_1202_1744
 Kvantum
 libreoffice
@@ -41,7 +40,7 @@ qt6ct
 QtProject.conf
 quickshell
 README.md
-rofi
+rofi/
 shotwell
 swappy
 swaync
@@ -53,7 +52,6 @@ update-notifier
 user-dirs.dirs
 user-dirs.locale
 vlc
-wallust
 waybar.bak
 wlogout
 xdg-desktop-portals
@@ -73,3 +71,7 @@ kritarc
 google-chrome/
 kritashortcutsrc
 evince
+inkscape/
+karboncalligraphyrc
+nvim.bak/
+sozi/
