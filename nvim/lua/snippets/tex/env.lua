@@ -1,3 +1,5 @@
+-- SHIFT + Y to reload snippets
+
 -- start these snippets only on new line character !
 local line_begin = require("luasnip.extras.expand_conditions").line_begin
 
@@ -93,7 +95,7 @@ return {
       [[
       \begin{figure}
         \center
-        \includegraphics[width=\0.7linewidth]{<>}
+        \includegraphics[width=0.7\textwidth]{<>}
         \caption{<>}
         \label{fig:<>}
       \end{figure}

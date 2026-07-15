@@ -54,3 +54,17 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.bo.textwidth = 80
   end,
 })
+
+-- disable expanding the ref into caption in tex file
+-- a small delay is added to wait for the LSP to finish initialising on the file
+vim.api.nvim_create_autocmd("LspAttach", {
+  pattern = "*.tex",
+  callback = function(ev)
+    local client = vim.lsp.get_client_by_id(ev.data.client_id)
+    if client and client.name == "texlab" then
+      vim.defer_fn(function()
+        vim.lsp.inlay_hint.enable(false, { bufnr = ev.buf })
+      end, 500) -- wait 500ms for texlab to finish attaching
+    end
+  end,
+})

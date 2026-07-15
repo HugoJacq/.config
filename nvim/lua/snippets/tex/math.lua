@@ -1,3 +1,5 @@
+-- SHIFT + Y to reload snippets
+
 local helpers = require("luasnip-helper-funcs")
 local get_visual = helpers.get_visual
 
@@ -191,6 +193,46 @@ return {
     },
     fmta([[\sqrt{<>}]], {
       d(1, get_visual),
+    })
+  ),
+  -- over -> \overline{}
+  s(
+    {
+      trig = "over",
+      snippetType = "autosnippet",
+      regTrig = true,
+      wordTrig = false,
+      condition = in_mathzone,
+    },
+    fmta([[\overline{<>}]], {
+      d(1, get_visual),
+    })
+  ),
+  -- hat -> \hat{}
+  s(
+    {
+      trig = "hat",
+      snippetType = "autosnippet",
+      regTrig = true,
+      wordTrig = false,
+      condition = in_mathzone,
+    },
+    fmta([[\hat{<>}]], {
+      d(1, get_visual),
+    })
+  ),
+  -- binom -> \binom{}
+  s(
+    {
+      trig = "binom",
+      snippetType = "autosnippet",
+      regTrig = true,
+      wordTrig = false,
+      condition = in_mathzone,
+    },
+    fmta([[\binom{<>}{<>}]], {
+      i(1),
+      i(2),
     })
   ),
 }

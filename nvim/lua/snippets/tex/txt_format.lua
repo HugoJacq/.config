@@ -1,3 +1,5 @@
+-- SHIFT + Y to reload snippets
+
 local helpers = require("luasnip-helper-funcs")
 local get_visual = helpers.get_visual
 -- ----------------------------------------------------------------------------
@@ -17,7 +19,7 @@ return {
       d(1, get_visual),
     })
   ),
-  -- underlined implementing visual selection
+  -- bold implementing visual selection
   s(
     { trig = "tbb", dscr = "Expands 'tbb' into LaTeX's textbf{} command." },
     fmta("\\textbf{<>}", {

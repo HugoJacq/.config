@@ -1,3 +1,5 @@
+-- SHIFT + Y to reload snippets
+
 -- ----------------------------------------------------------------------------
 -- Function that check if in math-mode
 local in_mathzone = function()
@@ -44,6 +46,9 @@ local greek_specs = {
   Omega = { context = { name = "Omega" }, command = "\\Omega" },
   nabla = { context = { name = ";n" }, command = "\\nabla" },
   infinity = { context = { name = ";8" }, command = "\\infty" },
+  cos = { context = { name = "cos" }, command = "\\cos" },
+  sin = { context = { name = "sin" }, command = "\\sin" },
+  tan = { context = { name = "tan" }, command = "\\tan" },
 }
 -- you can either use shortcuts or full name
 -- e.g. ;a or alpha will auto ouput \alpha
