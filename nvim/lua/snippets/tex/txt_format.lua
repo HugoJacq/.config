@@ -5,23 +5,30 @@ local get_visual = helpers.get_visual
 -- ----------------------------------------------------------------------------
 
 return {
+  -- verbatim font implementing visual selection
+  s(
+    { trig = "vv", dscr = "Expands 'vv' into LaTeX's verb|| command.", snippetType = "autosnippet" },
+    fmta("\\verb|<>|", {
+      d(1, get_visual),
+    })
+  ),
   -- italic font implementing visual selection
   s(
-    { trig = "tii", dscr = "Expands 'tii' into LaTeX's textit{} command." },
+    { trig = "tii", dscr = "Expands 'tii' into LaTeX's textit{} command.", snippetType = "autosnippet" },
     fmta("\\textit{<>}", {
       d(1, get_visual),
     })
   ),
   -- underlined implementing visual selection
   s(
-    { trig = "tuu", dscr = "Expands 'tuu' into LaTeX's underline{} command." },
+    { trig = "tuu", dscr = "Expands 'tuu' into LaTeX's underline{} command.", snippetType = "autosnippet" },
     fmta("\\underline{<>}", {
       d(1, get_visual),
     })
   ),
   -- bold implementing visual selection
   s(
-    { trig = "tbb", dscr = "Expands 'tbb' into LaTeX's textbf{} command." },
+    { trig = "tbb", dscr = "Expands 'tbb' into LaTeX's textbf{} command.", snippetType = "autosnippet" },
     fmta("\\textbf{<>}", {
       d(1, get_visual),
     })
@@ -29,7 +36,7 @@ return {
 
   -- type writer font
   s(
-    { trig = "ttt", dscr = "Expands 'ttt' into LaTeX's textit{} command." },
+    { trig = "ttt", dscr = "Expands 'ttt' into LaTeX's textit{} command.", snippetType = "autosnippet" },
     fmta("\\texttt{<>}", {
       d(1, get_visual),
     })

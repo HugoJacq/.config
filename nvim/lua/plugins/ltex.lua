@@ -10,6 +10,7 @@ return {
             language = "en-GB", -- matches your UK English preference
             -- ltex will also pick up dictionaries; add words as needed:
             -- dictionary = { ["en-GB"] = { "neovim", "LazyVim" } },
+            checkFrequency = "save", -- only check on save, not on every keystroke
           },
         },
       },

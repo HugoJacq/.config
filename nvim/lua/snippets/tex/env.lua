@@ -93,9 +93,9 @@ return {
     },
     fmta(
       [[
-      \begin{figure}
+      \begin{figure}[h]
         \center
-        \includegraphics[width=0.7\textwidth]{<>}
+        \includegraphics[width=0.5\textwidth]{<>}
         \caption{<>}
         \label{fig:<>}
       \end{figure}
@@ -107,6 +107,45 @@ return {
       }
     )
   ),
+  -- new figure with 2 subfigures
+  -- you need at the top of the document
+  --\usepackage{graphicx}
+  --\usepackage{subcaption}
+  s(
+    {
+      trig = "fig2",
+      dscr = "A new figure with 2 subfigures",
+      condition = line_begin,
+    },
+    fmta(
+      [[
+      \begin{figure}[h]
+        \begin{subfigure}{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{<>}
+          \caption{<>}
+        \end{subfigure}%
+        \hfill
+        \begin{subfigure}{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{<>}
+          \caption{<>}
+        \end{subfigure}
+        \caption{<>}
+        \label{fig:<>}
+      \end{figure}
+      ]],
+      {
+        i(1),
+        i(2),
+        i(3),
+        i(4),
+        i(5),
+        i(6),
+      }
+    )
+  ),
+
   -- enumerate
   s(
     {
@@ -117,7 +156,7 @@ return {
     fmta(
       [[
       \begin{enumerate}
-          <>
+          \item <>
       \end{enumerate}
     ]],
       {
