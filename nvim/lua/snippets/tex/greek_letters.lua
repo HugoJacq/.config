@@ -49,6 +49,7 @@ local greek_specs = {
   cos = { context = { name = "cos" }, command = "\\cos" },
   sin = { context = { name = "sin" }, command = "\\sin" },
   tan = { context = { name = "tan" }, command = "\\tan" },
+  partial = { context = { name = "\\pp" }, command = "\\partial" },
 }
 -- you can either use shortcuts or full name
 -- e.g. ;a or alpha will auto ouput \alpha

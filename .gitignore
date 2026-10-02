@@ -75,3 +75,17 @@ inkscape/
 karboncalligraphyrc
 nvim.bak/
 sozi/
+
+NVIDIA Corporation/
+calibre/
+color.jcnf
+color/
+gnuplot/
+gtk-2.0/
+io.github.CyberTimon.RapidRAW/
+kitty/current-theme.conf
+kitty/kitty.conf.bak
+nvim/lua/plugins/disable_pyright_messages.lua
+opencode/
+totem/
+transmission/

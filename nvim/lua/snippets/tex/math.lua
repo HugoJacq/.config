@@ -27,6 +27,22 @@ return {
     })
   ),
 
+  -- $ -> $\unit{<>}$ (dynamic)
+  s(
+    {
+      trig = "\\u",
+      snippetType = "autosnippet",
+      wordTrig = false,
+      regTrig = true,
+    },
+    fmta("<>$\\unit{<>}$", {
+      f(function(_, snip)
+        return snip.captures[1]
+      end),
+      d(1, get_visual),
+    })
+  ),
+
   -- ff -> /frac{}{}
   s(
     {

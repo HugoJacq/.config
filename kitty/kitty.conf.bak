@@ -19,7 +19,7 @@ dynamic_background_opacity 1
 confirm_os_window_close 0
 
 # Animated cursor
-cursor_trail 0
+cursor_trail 1
 
 # change to x11 or wayland or leave auto
 linux_display_server auto
@@ -36,6 +36,8 @@ window_padding_width 4
 # background #000000
 # cursor #dddddd
 
+
+
 copy_on_select yes
 copy_on_select clipboard
 clipboard_control write-clipboard write-primary read-clipboard-ask read-primary-ask
@@ -49,10 +51,6 @@ map f1 launch --cwd=current
 
 
 # BEGIN_KITTY_THEME
-# 1984 Orwellian
+# Argonaut
 include current-theme.conf
 # END_KITTY_THEME
-momentum_scroll 0
-pixel_scroll no
-touch_scroll_multiplier 1.0
-wheel_scroll_multiplier 5.0
